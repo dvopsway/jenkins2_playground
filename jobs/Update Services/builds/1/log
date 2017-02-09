@@ -1,0 +1,11 @@
+Started by user [8mha:////4HpBBrE6nw0G8BpQvyY+wja75yQHEePXpzJfsby7LLypAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgY+/dLi1CL9gsSU3MTsxCIAuVDxkcMAAAA=[0mpadmakar ojha
+Building in workspace /home/local/JASPERINDIA/padmakar.ojha/.jenkins/workspace/Testing
+[Testing] $ /bin/sh -xe /tmp/hudson4596649387197558655.sh
++ cd /home/local/JASPERINDIA/padmakar.ojha/DevOps/production/services
++ git pull --rebase origin master
+From gitlab.snapdeal.com:devtools/services
+ * branch            master     -> FETCH_HEAD
+   4a5b1ca..f09da0d  master     -> origin/master
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to f09da0d22564a3560314645dd9c671daf3a3b346.
+Finished: SUCCESS

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.9">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.SCMTrigger>
+          <spec>* * * * *</spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.25">
+    <script>node {
+    
+    notify &quot;started&quot;
+    
+    def project_path = &apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;
+    
+    stage(&apos;Git Pull&apos;) {
+        git &apos;https://github.com/dvopsway/jenkins2-course-spring-boot.git&apos;
+    }
+    
+    try{
+        stage(&apos;Build&apos;) {
+            dir(&apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;) {
+            sh &apos;mvn clean package&apos;
+            }
+        }
+        notify &quot;Success&quot;
+    }
+    catch (err) {
+        echo &quot;Caught: ${err}&quot;
+        currentBuild.result = &apos;FAILURE&apos;
+        notify &quot;Failed&quot;
+    }
+    
+    stage(&apos;Archive&apos;) {
+        dir(&apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;) {
+        archiveArtifacts &quot;target/*jar&quot;
+        }
+    }
+    
+    
+    
+}
+
+def notify(status) {
+    emailext body: &quot;${status} Job ${JOB_NAME}&quot;, subject: &quot;${status} job &quot;, to: &apos;padmakarojha@gmail.com&apos;
+}
+
+
+
+
+
+
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+</flow-definition>

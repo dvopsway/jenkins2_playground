@@ -1,0 +1,15 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dvopsway/jenkins2-course-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/dvopsway/jenkins2-course-spring-boot.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/dvopsway/jenkins2-course-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3485f9632e9b2fd89ebc6c874aa6b9a9a9db878e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3485f9632e9b2fd89ebc6c874aa6b9a9a9db878e
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 3485f9632e9b2fd89ebc6c874aa6b9a9a9db878e
+ > git rev-list 3485f9632e9b2fd89ebc6c874aa6b9a9a9db878e # timeout=10

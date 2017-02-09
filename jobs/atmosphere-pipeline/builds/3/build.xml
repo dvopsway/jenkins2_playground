@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.9">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>padmakar</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.5">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>4</queueId>
+  <timestamp>1486635033906</timestamp>
+  <startTime>1486635033907</startTime>
+  <result>FAILURE</result>
+  <duration>74</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>git &apos;https://github.com/g0t4/jenkins2-course-spring-boot.git&apos;
+
+def project_path = &apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;
+
+dir(&apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;) {
+    sh &apos;mvn clean package&apos;
+    archiveArtifacts &quot;target/*jar&quot;
+}
+
+
+
+
+</script>
+    <loadedScripts class="map"/>
+    <sandbox>true</sandbox>
+    <iota>4</iota>
+    <head>1:4</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

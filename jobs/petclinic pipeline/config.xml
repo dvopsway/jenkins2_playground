@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.9">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.SCMTrigger>
+          <spec>* * * * *</spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.25">
+    <script>node {
+    
+    notify &quot;started&quot;
+    
+    def project_path = &apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;
+    
+    stage(&apos;Git Pull&apos;) {
+        git &apos;https://github.com/g0t4/jenkins2-course-spring-petclinic.git&apos;
+    }
+    
+    try{
+        stage(&apos;Build&apos;) {
+            sh &apos;mvn clean package&apos;
+        }
+        notify &quot;Success&quot;
+    }
+    catch (err) {
+        echo &quot;Caught: ${err}&quot;
+        currentBuild.result = &apos;FAILURE&apos;
+        notify &quot;Failed&quot;
+    }
+    
+    stage(&apos;Publish Test Results&apos;){
+        junit &apos;target/surefire-reports/TEST-*.xml&apos;
+    }
+    
+    stage(&apos;Archive&apos;) {
+        archiveArtifacts &quot;target/*?ar&quot;
+    }
+    
+    
+    
+}
+
+def notify(status){
+    emailext (
+      to: &quot;padmakarojha@gmail.com&quot;,
+      subject: &quot;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;,
+      body: &quot;&quot;&quot;&lt;p&gt;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check console output at &lt;a href=&apos;${env.BUILD_URL}&apos;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&lt;/p&gt;&quot;&quot;&quot;,
+    )
+}
+
+
+
+
+
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+</flow-definition>

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.9">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.5">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.25">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@1.19">
+      <messageId>&lt;450312827.15.1486640708871.JavaMail.&quot;padmakar.ojha&quot;@lu-cj1dg32&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.0.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.2.1">
+              <sha1>3485f9632e9b2fd89ebc6c874aa6b9a9a9db878e</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/dvopsway/jenkins2-course-spring-boot.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.0.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/local/JASPERINDIA/padmakar.ojha/.jenkins/workspace/petclinic pipeline</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.3">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/dvopsway/jenkins2-course-spring-boot.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>28</queueId>
+  <timestamp>1486640708730</timestamp>
+  <startTime>1486640708731</startTime>
+  <result>SUCCESS</result>
+  <duration>57694</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+    
+    notify &quot;started&quot;
+    
+    def project_path = &apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;
+    
+    stage(&apos;Git Pull&apos;) {
+        git &apos;https://github.com/dvopsway/jenkins2-course-spring-boot.git&apos;
+    }
+    
+    try{
+        stage(&apos;Build&apos;) {
+            dir(&apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;) {
+            sh &apos;mvn clean package&apos;
+            }
+        }
+        notify &quot;Success&quot;
+    }
+    catch (err) {
+        echo &quot;Caught: ${err}&quot;
+        currentBuild.result = &apos;FAILURE&apos;
+        notify &quot;Failed&quot;
+    }
+    
+    stage(&apos;Archive&apos;) {
+        dir(&apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;) {
+        archiveArtifacts &quot;target/*jar&quot;
+        }
+    }
+    
+    
+    
+}
+
+def notify(status) {
+    emailext body: &quot;${status} Job ${JOB_NAME}&quot;, subject: &quot;${status} job &quot;, to: &apos;padmakarojha@gmail.com&apos;
+}
+
+
+
+
+
+
+</script>
+    <loadedScripts class="map"/>
+    <sandbox>true</sandbox>
+    <iota>32</iota>
+    <head>1:32</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/dvopsway/jenkins2-course-spring-boot.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/home/local/JASPERINDIA/padmakar.ojha/.jenkins/workspace/petclinic pipeline</workspace>
+      <changelogFile>/home/local/JASPERINDIA/padmakar.ojha/.jenkins/jobs/petclinic pipeline/builds/1/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>
