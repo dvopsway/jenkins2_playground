@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.9">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>padmakar</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.5">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.25">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@1.19">
+      <messageId>&lt;911250155.35.1486646315436.JavaMail.&quot;padmakar.ojha&quot;@lu-cj1dg32&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.0.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.2.1">
+              <sha1>22f084e7740f4e2293557beeb3c3b850ae0e321b</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/dvopsway/jenkins2-course-spring-petclinic.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.0.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/local/JASPERINDIA/padmakar.ojha/.jenkins/workspace/petclinic pipeline</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.3">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/dvopsway/jenkins2-course-spring-petclinic.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.tasks.junit.TestResultAction plugin="junit@1.19">
+      <descriptions class="concurrent-hash-map"/>
+      <failCount>0</failCount>
+      <skipCount>0</skipCount>
+      <totalCount>62</totalCount>
+      <healthScaleFactor>1.0</healthScaleFactor>
+      <testData/>
+    </hudson.tasks.junit.TestResultAction>
+  </actions>
+  <queueId>38</queueId>
+  <timestamp>1486646315341</timestamp>
+  <startTime>1486646315341</startTime>
+  <result>SUCCESS</result>
+  <duration>32803</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+    
+    notify &quot;started&quot;
+    
+    def project_path = &apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;
+    
+    stage(&apos;Git Pull&apos;) {
+        git &apos;https://github.com/dvopsway/jenkins2-course-spring-petclinic.git&apos;
+    }
+    
+    try{
+        stage(&apos;Build&apos;) {
+            sh &apos;mvn clean package&apos;
+        }
+        notify &quot;Success&quot;
+        stage(&apos;Publish Test Results&apos;){
+        junit &apos;target/surefire-reports/TEST-*.xml&apos;
+        }
+    }
+    catch (err) {
+        echo &quot;Caught: ${err}&quot;
+        currentBuild.result = &apos;FAILURE&apos;
+        notify &quot;Failed&quot;
+        stage(&apos;Publish Test Results&apos;){
+        junit &apos;target/surefire-reports/TEST-*.xml&apos;
+        }
+    }
+    
+    stage(&apos;Archive&apos;) {
+        archiveArtifacts &quot;target/*?ar&quot;
+    }
+    
+    
+    
+}
+
+def notify(status){
+    emailext (
+      to: &quot;padmakarojha@gmail.com&quot;,
+      subject: &quot;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;,
+      body: &quot;&quot;&quot;&lt;p&gt;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check console output at &lt;a href=&apos;${env.BUILD_URL}&apos;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&lt;/p&gt;&quot;&quot;&quot;,
+    )
+}
+
+
+
+
+
+</script>
+    <loadedScripts class="map"/>
+    <sandbox>true</sandbox>
+    <iota>29</iota>
+    <head>1:29</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/dvopsway/jenkins2-course-spring-petclinic.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/home/local/JASPERINDIA/padmakar.ojha/.jenkins/workspace/petclinic pipeline</workspace>
+      <changelogFile>/home/local/JASPERINDIA/padmakar.ojha/.jenkins/jobs/petclinic pipeline/builds/6/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

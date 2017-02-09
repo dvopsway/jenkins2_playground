@@ -21,7 +21,7 @@
     def project_path = &apos;spring-boot-samples/spring-boot-sample-atmosphere&apos;
     
     stage(&apos;Git Pull&apos;) {
-        git &apos;https://github.com/g0t4/jenkins2-course-spring-petclinic.git&apos;
+        git &apos;https://github.com/dvopsway/jenkins2-course-spring-petclinic.git&apos;
     }
     
     try{
@@ -29,15 +29,17 @@
             sh &apos;mvn clean package&apos;
         }
         notify &quot;Success&quot;
+        stage(&apos;Publish Test Results&apos;){
+        junit &apos;target/surefire-reports/TEST-*.xml&apos;
+        }
     }
     catch (err) {
         echo &quot;Caught: ${err}&quot;
         currentBuild.result = &apos;FAILURE&apos;
         notify &quot;Failed&quot;
-    }
-    
-    stage(&apos;Publish Test Results&apos;){
+        stage(&apos;Publish Test Results&apos;){
         junit &apos;target/surefire-reports/TEST-*.xml&apos;
+        }
     }
     
     stage(&apos;Archive&apos;) {
