@@ -1,8 +1,8 @@
-Started on Feb 9, 2017 7:01:00 PM
+Started on 10 Feb, 2017 7:26:42 PM
 Using strategy: Default
 [poll] Last Built Revision: Revision 22f084e7740f4e2293557beeb3c3b850ae0e321b (refs/remotes/origin/master)
  > git ls-remote -h https://github.com/dvopsway/jenkins2-course-spring-petclinic.git # timeout=10
 Found 6 remote heads on https://github.com/dvopsway/jenkins2-course-spring-petclinic.git
-[poll] Latest remote head revision on refs/heads/master is: 22f084e7740f4e2293557beeb3c3b850ae0e321b - already built by 6
-Done. Took 1.2 sec
+[poll] Latest remote head revision on refs/heads/master is: 22f084e7740f4e2293557beeb3c3b850ae0e321b - already built by 10
+Done. Took 0.98 sec
 No changes

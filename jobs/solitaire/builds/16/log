@@ -1,0 +1,413 @@
+Started by user [8mha:////4HpBBrE6nw0G8BpQvyY+wja75yQHEePXpzJfsby7LLypAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgY+/dLi1CL9gsSU3MTsxCIAuVDxkcMAAAA=[0mpadmakar ojha
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on agent in /tmp/jenkins-agent/workspace/solitaire
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (CI)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage CI
+Proceeding
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/g0t4/solitaire-systemjs-course # timeout=10
+Fetching upstream changes from https://github.com/g0t4/solitaire-systemjs-course
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/g0t4/solitaire-systemjs-course +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/jenkins2-course^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/jenkins2-course^{commit} # timeout=10
+Checking out Revision 67dc22287df1d73280b6e1f4b25abb60d526e773 (refs/remotes/origin/jenkins2-course)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 67dc22287df1d73280b6e1f4b25abb60d526e773
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D jenkins2-course # timeout=10
+ > git checkout -b jenkins2-course 67dc22287df1d73280b6e1f4b25abb60d526e773
+ > git rev-list 67dc22287df1d73280b6e1f4b25abb60d526e773 # timeout=10
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[solitaire] Running shell script
++ npm install
+
+> solitaire@0.0.0 postinstall /private/tmp/jenkins-agent/workspace/solitaire
+> node node_modules/bower/bin/bower install
+
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 16681 file(s)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[solitaire] Running shell script
++ npm run test-single-run -- --browsers PhantomJS
+
+> solitaire@0.0.0 test-single-run /private/tmp/jenkins-agent/workspace/solitaire
+> karma start karma.conf.js --single-run --browsers PhantomJS
+
+[32m10 02 2017 17:37:15.741:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9876/
+[32m10 02 2017 17:37:15.746:INFO [launcher]: [39mStarting browser PhantomJS
+[32m10 02 2017 17:37:17.440:INFO [PhantomJS 2.1.1 (Mac OS X 0.0.0)]: [39mConnected on socket FMW9A1GoGLoSjlmhAAAA with id 22741321
+PhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 0 of 64 SUCCESS (0 secs / 0 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 1 of 64 SUCCESS (0 secs / 0.005 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 2 of 64 SUCCESS (0 secs / 0.006 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 3 of 64 SUCCESS (0 secs / 0.015 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 4 of 64 SUCCESS (0 secs / 0.019 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 5 of 64 SUCCESS (0 secs / 0.02 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 6 of 64 SUCCESS (0 secs / 0.021 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 7 of 64 SUCCESS (0 secs / 0.03 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 8 of 64 SUCCESS (0 secs / 0.035 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 9 of 64 SUCCESS (0 secs / 0.036 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 10 of 64 SUCCESS (0 secs / 0.037 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 11 of 64 SUCCESS (0 secs / 0.038 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 12 of 64 SUCCESS (0 secs / 0.045 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 13 of 64 SUCCESS (0 secs / 0.049 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 14 of 64 SUCCESS (0 secs / 0.05 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 15 of 64 SUCCESS (0 secs / 0.051 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 16 of 64 SUCCESS (0 secs / 0.052 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 17 of 64 SUCCESS (0 secs / 0.054 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 18 of 64 SUCCESS (0 secs / 0.06 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 19 of 64 SUCCESS (0 secs / 0.062 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 20 of 64 SUCCESS (0 secs / 0.064 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 21 of 64 SUCCESS (0 secs / 0.065 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 22 of 64 SUCCESS (0 secs / 0.065 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 23 of 64 SUCCESS (0 secs / 0.065 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 24 of 64 SUCCESS (0 secs / 0.065 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 25 of 64 SUCCESS (0 secs / 0.065 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 26 of 64 SUCCESS (0 secs / 0.066 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 27 of 64 SUCCESS (0 secs / 0.066 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 28 of 64 SUCCESS (0 secs / 0.066 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 29 of 64 SUCCESS (0 secs / 0.066 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 30 of 64 SUCCESS (0 secs / 0.066 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 31 of 64 SUCCESS (0 secs / 0.067 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 32 of 64 SUCCESS (0 secs / 0.067 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 33 of 64 SUCCESS (0 secs / 0.069 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 34 of 64 SUCCESS (0 secs / 0.069 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 35 of 64 SUCCESS (0 secs / 0.069 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 36 of 64 SUCCESS (0 secs / 0.07 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 37 of 64 SUCCESS (0 secs / 0.074 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 38 of 64 SUCCESS (0 secs / 0.076 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 39 of 64 SUCCESS (0 secs / 0.077 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 40 of 64 SUCCESS (0 secs / 0.078 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 41 of 64 SUCCESS (0 secs / 0.078 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 42 of 64 SUCCESS (0 secs / 0.078 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 43 of 64 SUCCESS (0 secs / 0.078 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 44 of 64 SUCCESS (0 secs / 0.079 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 45 of 64 SUCCESS (0 secs / 0.079 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 46 of 64 SUCCESS (0 secs / 0.08 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 47 of 64 SUCCESS (0 secs / 0.081 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 48 of 64 SUCCESS (0 secs / 0.082 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 49 of 64 SUCCESS (0 secs / 0.083 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 50 of 64 SUCCESS (0 secs / 0.086 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 51 of 64 SUCCESS (0 secs / 0.086 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 52 of 64 SUCCESS (0 secs / 0.087 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 53 of 64 SUCCESS (0 secs / 0.09 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 54 of 64 SUCCESS (0 secs / 0.091 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 55 of 64 SUCCESS (0 secs / 0.092 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 56 of 64 SUCCESS (0 secs / 0.093 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 57 of 64 SUCCESS (0 secs / 0.093 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 58 of 64 SUCCESS (0 secs / 0.094 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 59 of 64 SUCCESS (0 secs / 0.095 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 60 of 64 SUCCESS (0 secs / 0.096 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 61 of 64 SUCCESS (0 secs / 0.1 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 62 of 64 SUCCESS (0 secs / 0.101 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 63 of 64 SUCCESS (0 secs / 0.102 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 64 of 64 SUCCESS (0 secs / 0.103 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 64 of 64 SUCCESS (0.065 secs / 0.103 secs)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] step
+Recording test results
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (Browser Testing)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Browser Testing
+Proceeding
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] parallel
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] { (Branch: chrome)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] { (Branch: firefox)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] { (Branch: safari)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] node
+[chrome] Running on agent in /tmp/jenkins-agent/workspace/solitaire
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] node
+[firefox] Running on master in /Users/padmakar/.jenkins/workspace/solitaire
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] node
+[safari] Running on master in /Users/padmakar/.jenkins/workspace/solitaire@2
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] {
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] {
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] {
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] sh
+[chrome] [solitaire] Running shell script
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] sh
+[firefox] [solitaire] Running shell script
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] sh
+[chrome] + rm -rf Dockerfile LICENSE app bower.json docker-compose.yml karma.conf.js node_modules package.json test-results tests
+[firefox] + rm -rf Dockerfile LICENSE app bower.json docker-compose.yml karma.conf.js node_modules package.json test-results tests
+[safari] [solitaire@2] Running shell script
+[safari] + rm -rf Dockerfile LICENSE app bower.json docker-compose.yml karma.conf.js node_modules package.json test-results tests
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] unstash
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] unstash
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] unstash
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] sh
+[chrome] [solitaire] Running shell script
+[chrome] + npm run test-single-run -- --browsers Chrome
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] sh
+[firefox] [solitaire] Running shell script
+[chrome] 
+[chrome] > solitaire@0.0.0 test-single-run /private/tmp/jenkins-agent/workspace/solitaire
+[chrome] > karma start karma.conf.js --single-run --browsers Chrome
+[chrome] 
+[firefox] + npm run test-single-run -- --browsers Firefox
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] sh
+[safari] [solitaire@2] Running shell script
+[safari] + npm run test-single-run -- --browsers Safari
+[firefox] 
+[firefox] > solitaire@0.0.0 test-single-run /Users/padmakar/.jenkins/workspace/solitaire
+[firefox] > karma start karma.conf.js --single-run --browsers Firefox
+[firefox] 
+[safari] 
+[safari] > solitaire@0.0.0 test-single-run /Users/padmakar/.jenkins/workspace/solitaire@2
+[safari] > karma start karma.conf.js --single-run --browsers Safari
+[safari] 
+[chrome] [32m10 02 2017 17:37:39.246:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9876/
+[chrome] [32m10 02 2017 17:37:39.261:INFO [launcher]: [39mStarting browser Chrome
+[firefox] [33m10 02 2017 17:37:40.658:WARN [karma]: [39mPort 9876 in use
+[firefox] [32m10 02 2017 17:37:40.668:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9877/
+[firefox] [32m10 02 2017 17:37:40.676:INFO [launcher]: [39mStarting browser Firefox
+[chrome] [32m10 02 2017 17:37:42.174:INFO [Chrome 56.0.2924 (Mac OS X 10.12.3)]: [39mConnected on socket 6L0fdRyJYlJqza41AAAA with id 55071190
+[chrome] Chrome 56.0.2924 (Mac OS X 10.12.3): Executed 0 of 64 SUCCESS (0 secs / 0 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 1 of 64 SUCCESS (0 secs / 0.004 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 2 of 64 SUCCESS (0 secs / 0.005 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 3 of 64 SUCCESS (0 secs / 0.047 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 4 of 64 SUCCESS (0 secs / 0.059 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 5 of 64 SUCCESS (0 secs / 0.066 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 6 of 64 SUCCESS (0 secs / 0.069 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 7 of 64 SUCCESS (0 secs / 0.085 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 8 of 64 SUCCESS (0 secs / 0.1 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 9 of 64 SUCCESS (0 secs / 0.103 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 10 of 64 SUCCESS (0 secs / 0.159 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 11 of 64 SUCCESS (0 secs / 0.163 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 12 of 64 SUCCESS (0 secs / 0.17 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 13 of 64 SUCCESS (0 secs / 0.173 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 14 of 64 SUCCESS (0 secs / 0.175 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 15 of 64 SUCCESS (0 secs / 0.177 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 16 of 64 SUCCESS (0 secs / 0.206 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 17 of 64 SUCCESS (0 secs / 0.231 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 18 of 64 SUCCESS (0 secs / 0.233 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 19 of 64 SUCCESS (0 secs / 0.235 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 20 of 64 SUCCESS (0 secs / 0.242 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 21 of 64 SUCCESS (0 secs / 0.252 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 22 of 64 SUCCESS (0 secs / 0.252 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 23 of 64 SUCCESS (0 secs / 0.252 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 24 of 64 SUCCESS (0 secs / 0.252 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 25 of 64 SUCCESS (0 secs / 0.252 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 26 of 64 SUCCESS (0 secs / 0.253 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 27 of 64 SUCCESS (0 secs / 0.253 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 28 of 64 SUCCESS (0 secs / 0.262 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 29 of 64 SUCCESS (0 secs / 0.262 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 30 of 64 SUCCESS (0 secs / 0.262 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 31 of 64 SUCCESS (0 secs / 0.263 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 32 of 64 SUCCESS (0 secs / 0.266 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 33 of 64 SUCCESS (0 secs / 0.27 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 34 of 64 SUCCESS (0 secs / 0.271 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 35 of 64 SUCCESS (0 secs / 0.271 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 36 of 64 SUCCESS (0 secs / 0.272 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 37 of 64 SUCCESS (0 secs / 0.274 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 38 of 64 SUCCESS (0 secs / 0.275 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 39 of 64 SUCCESS (0 secs / 0.28 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 40 of 64 SUCCESS (0 secs / 0.281 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 41 of 64 SUCCESS (0 secs / 0.281 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 42 of 64 SUCCESS (0 secs / 0.281 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 43 of 64 SUCCESS (0 secs / 0.281 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 44 of 64 SUCCESS (0 secs / 0.282 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 45 of 64 SUCCESS (0 secs / 0.282 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 46 of 64 SUCCESS (0 secs / 0.283 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 47 of 64 SUCCESS (0 secs / 0.283 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 48 of 64 SUCCESS (0 secs / 0.285 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 49 of 64 SUCCESS (0 secs / 0.287 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 50 of 64 SUCCESS (0 secs / 0.287 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 51 of 64 SUCCESS (0 secs / 0.287 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 52 of 64 SUCCESS (0 secs / 0.288 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 53 of 64 SUCCESS (0 secs / 0.289 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 54 of 64 SUCCESS (0 secs / 0.292 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 55 of 64 SUCCESS (0 secs / 0.293 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 56 of 64 SUCCESS (0 secs / 0.299 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 57 of 64 SUCCESS (0 secs / 0.301 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 58 of 64 SUCCESS (0 secs / 0.303 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 59 of 64 SUCCESS (0 secs / 0.304 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 60 of 64 SUCCESS (0 secs / 0.306 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 61 of 64 SUCCESS (0 secs / 0.308 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 62 of 64 SUCCESS (0 secs / 0.309 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 63 of 64 SUCCESS (0 secs / 0.31 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 64 of 64 SUCCESS (0 secs / 0.312 secs)
+[chrome] [1A[2KChrome 56.0.2924 (Mac OS X 10.12.3): Executed 64 of 64 SUCCESS (0.232 secs / 0.312 secs)
+[safari] [33m10 02 2017 17:37:42.362:WARN [karma]: [39mPort 9876 in use
+[safari] [33m10 02 2017 17:37:42.365:WARN [karma]: [39mPort 9877 in use
+[safari] [32m10 02 2017 17:37:42.366:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9878/
+[safari] [32m10 02 2017 17:37:42.375:INFO [launcher]: [39mStarting browser Safari
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] step
+[chrome] Recording test results
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] }
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] // node
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [chrome] }
+[firefox] [32m10 02 2017 17:37:45.141:INFO [Firefox 37.0.0 (Mac OS X 10.12.0)]: [39mConnected on socket 8KAfxclbz-tesgwdAAAA with id 42984686
+[firefox] Firefox 37.0.0 (Mac OS X 10.12.0): Executed 0 of 64 SUCCESS (0 secs / 0 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 1 of 64 SUCCESS (0 secs / 0.015 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 2 of 64 SUCCESS (0 secs / 0.015 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 3 of 64 SUCCESS (0 secs / 0.03 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 4 of 64 SUCCESS (0 secs / 0.038 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 5 of 64 SUCCESS (0 secs / 0.042 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 6 of 64 SUCCESS (0 secs / 0.047 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 7 of 64 SUCCESS (0 secs / 0.063 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 8 of 64 SUCCESS (0 secs / 0.068 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 9 of 64 SUCCESS (0 secs / 0.073 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 10 of 64 SUCCESS (0 secs / 0.085 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 11 of 64 SUCCESS (0 secs / 0.094 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 12 of 64 SUCCESS (0 secs / 0.107 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 13 of 64 SUCCESS (0 secs / 0.118 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 14 of 64 SUCCESS (0 secs / 0.137 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 15 of 64 SUCCESS (0 secs / 0.14 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 16 of 64 SUCCESS (0 secs / 0.143 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 17 of 64 SUCCESS (0 secs / 0.231 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 18 of 64 SUCCESS (0 secs / 0.234 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 19 of 64 SUCCESS (0 secs / 0.236 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 20 of 64 SUCCESS (0 secs / 0.238 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 21 of 64 SUCCESS (0 secs / 0.245 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 22 of 64 SUCCESS (0 secs / 0.245 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 23 of 64 SUCCESS (0 secs / 0.246 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 24 of 64 SUCCESS (0 secs / 0.246 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 25 of 64 SUCCESS (0 secs / 0.246 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 26 of 64 SUCCESS (0 secs / 0.246 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 27 of 64 SUCCESS (0 secs / 0.246 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 28 of 64 SUCCESS (0 secs / 0.246 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 29 of 64 SUCCESS (0 secs / 0.246 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 30 of 64 SUCCESS (0 secs / 0.246 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 31 of 64 SUCCESS (0 secs / 0.252 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 32 of 64 SUCCESS (0 secs / 0.252 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 33 of 64 SUCCESS (0 secs / 0.289 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 34 of 64 SUCCESS (0 secs / 0.295 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 35 of 64 SUCCESS (0 secs / 0.295 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 36 of 64 SUCCESS (0 secs / 0.297 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 37 of 64 SUCCESS (0 secs / 0.299 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 38 of 64 SUCCESS (0 secs / 0.302 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 39 of 64 SUCCESS (0 secs / 0.303 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 40 of 64 SUCCESS (0 secs / 0.307 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 41 of 64 SUCCESS (0 secs / 0.308 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 42 of 64 SUCCESS (0 secs / 0.308 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 43 of 64 SUCCESS (0 secs / 0.308 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 44 of 64 SUCCESS (0 secs / 0.308 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 45 of 64 SUCCESS (0 secs / 0.308 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 46 of 64 SUCCESS (0 secs / 0.309 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 47 of 64 SUCCESS (0 secs / 0.31 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 48 of 64 SUCCESS (0 secs / 0.317 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 49 of 64 SUCCESS (0 secs / 0.322 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 50 of 64 SUCCESS (0 secs / 0.323 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 51 of 64 SUCCESS (0 secs / 0.324 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 52 of 64 SUCCESS (0 secs / 0.331 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 53 of 64 SUCCESS (0 secs / 0.334 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 54 of 64 SUCCESS (0 secs / 0.337 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 55 of 64 SUCCESS (0 secs / 0.34 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 56 of 64 SUCCESS (0 secs / 0.343 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 57 of 64 SUCCESS (0 secs / 0.346 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 58 of 64 SUCCESS (0 secs / 0.349 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 59 of 64 SUCCESS (0 secs / 0.351 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 60 of 64 SUCCESS (0 secs / 0.353 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 61 of 64 SUCCESS (0 secs / 0.355 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 62 of 64 SUCCESS (0 secs / 0.357 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 63 of 64 SUCCESS (0 secs / 0.361 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 64 of 64 SUCCESS (0 secs / 0.362 secs)
+[firefox] [1A[2KFirefox 37.0.0 (Mac OS X 10.12.0): Executed 64 of 64 SUCCESS (0.481 secs / 0.362 secs)
+[safari] [32m10 02 2017 17:37:45.228:INFO [Safari 10.0.3 (Mac OS X 10.12.3)]: [39mConnected on socket GUGHt9duqoW4jk5RAAAA with id 61613787
+[safari] Safari 10.0.3 (Mac OS X 10.12.3): Executed 0 of 64 SUCCESS (0 secs / 0 secs)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] step
+[firefox] Recording test results
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] }
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] // node
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [firefox] }
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 1 of 64 SUCCESS (0 secs / 0.952 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 2 of 64 SUCCESS (0 secs / 0.954 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 3 of 64 SUCCESS (0 secs / 0.966 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 4 of 64 SUCCESS (0 secs / 0.973 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 5 of 64 SUCCESS (0 secs / 0.976 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 6 of 64 SUCCESS (0 secs / 0.977 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 7 of 64 SUCCESS (0 secs / 0.977 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 8 of 64 SUCCESS (0 secs / 0.977 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 9 of 64 SUCCESS (0 secs / 0.977 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 10 of 64 SUCCESS (0 secs / 0.977 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 11 of 64 SUCCESS (0 secs / 0.978 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 12 of 64 SUCCESS (0 secs / 0.978 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 13 of 64 SUCCESS (0 secs / 0.978 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 14 of 64 SUCCESS (0 secs / 0.978 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 15 of 64 SUCCESS (0 secs / 0.978 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 16 of 64 SUCCESS (0 secs / 0.978 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 17 of 64 SUCCESS (0 secs / 1.947 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 18 of 64 SUCCESS (0 secs / 1.958 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 19 of 64 SUCCESS (0 secs / 1.959 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 20 of 64 SUCCESS (0 secs / 1.96 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 21 of 64 SUCCESS (0 secs / 1.963 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 22 of 64 SUCCESS (0 secs / 1.976 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 23 of 64 SUCCESS (0 secs / 1.977 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 24 of 64 SUCCESS (0 secs / 1.982 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 25 of 64 SUCCESS (0 secs / 1.982 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 26 of 64 SUCCESS (0 secs / 1.982 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 27 of 64 SUCCESS (0 secs / 1.982 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 28 of 64 SUCCESS (0 secs / 1.982 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 29 of 64 SUCCESS (0 secs / 1.982 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 30 of 64 SUCCESS (0 secs / 1.998 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 31 of 64 SUCCESS (0 secs / 1.999 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 32 of 64 SUCCESS (0 secs / 2.925 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 33 of 64 SUCCESS (0 secs / 2.927 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 34 of 64 SUCCESS (0 secs / 2.927 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 35 of 64 SUCCESS (0 secs / 2.927 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 36 of 64 SUCCESS (0 secs / 2.927 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 37 of 64 SUCCESS (0 secs / 2.931 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 38 of 64 SUCCESS (0 secs / 2.933 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 39 of 64 SUCCESS (0 secs / 2.934 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 40 of 64 SUCCESS (0 secs / 2.94 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 41 of 64 SUCCESS (0 secs / 2.942 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 42 of 64 SUCCESS (0 secs / 2.944 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 43 of 64 SUCCESS (0 secs / 2.945 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 44 of 64 SUCCESS (0 secs / 2.947 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 45 of 64 SUCCESS (0 secs / 2.949 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 46 of 64 SUCCESS (0 secs / 2.95 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 47 of 64 SUCCESS (0 secs / 2.951 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 48 of 64 SUCCESS (0 secs / 2.953 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 49 of 64 SUCCESS (0 secs / 2.956 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 50 of 64 SUCCESS (0 secs / 2.956 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 51 of 64 SUCCESS (0 secs / 3.009 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 52 of 64 SUCCESS (0 secs / 3.014 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 53 of 64 SUCCESS (0 secs / 3.016 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 54 of 64 SUCCESS (0 secs / 3.041 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 55 of 64 SUCCESS (0 secs / 3.091 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 56 of 64 SUCCESS (0 secs / 3.094 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 57 of 64 SUCCESS (0 secs / 3.096 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 58 of 64 SUCCESS (0 secs / 3.097 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 59 of 64 SUCCESS (0 secs / 3.108 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 60 of 64 SUCCESS (0 secs / 3.111 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 61 of 64 SUCCESS (0 secs / 3.113 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 62 of 64 SUCCESS (0 secs / 3.115 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 63 of 64 SUCCESS (0 secs / 3.117 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 64 of 64 SUCCESS (0 secs / 3.119 secs)
+[safari] [1A[2KSafari 10.0.3 (Mac OS X 10.12.3): Executed 64 of 64 SUCCESS (2.928 secs / 3.119 secs)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] step
+[safari] Recording test results
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] }
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] // node
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] [safari] }
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // parallel
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (Archive)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Archive
+Proceeding
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on agent in /tmp/jenkins-agent/workspace/solitaire
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] step
+Archiving artifacts
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] emailext
+Sending email to: wesmdemos@gmail.com
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (deploy to stage)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage deploy to stage
+Proceeding
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] input
+deploy to stage?
+[8mha:////4KU1jdLgcZD89G/uyRocMyWZdtjPy1mcTQPi+RkdRR7TAAABGh+LCAAAAAAAAP9djzFOwzAYhf+kAlbEiNjY7TRQNyrqgAAJpAqQysTmJE7ixNjG/kPbhUNwDViQuAKH4AJszAwsBDLBW95bvk96Tx+w5h0cG1eSWuhGap9JYlVbdossjGsKZRbEt9Yah8SjsJ5IbVsklxfzq9OVFU5J3ZwbFJtvg5fP8dd7CMEMBq1TCFuzmt9xqrgu6Ryd1OXB0sFO1ebeaJIZ7Y0S5I+FTR+fpw/2NYTwDNaV0CVWve4W7iHo8O1/+FHfPzD0CUKApe3GBkKwi3BdIdoJpcpkXFXG4ySJkojWJqUdKZFLJ+iQ0d9j9DDlIhKC5ftFOi7ydMiKgrE4TkdJtMdGMbXOZELkJzcWV9/6il+lQQEAAA==[0mProceed or [8mha:////4JYx8sqLZu3CfhehJKUaD4Zr/WE26M5sT5ARVJHUdb72AAABFB+LCAAAAAAAAP9dkDFOwzAYhf+kKjNiRGzsdhqoGxV1QDCAVAFSuIDdOIkTyzb2H1oWDsE1YEHiChyCC7AxM7AQyARveW/5nvTe0weMg4dT6yvSSNMqE1aKON1VfSJr69tS2zUJnXPWIwkoXSDKuA7J1WV+fXbnpNfKtBcW5fbb6OVz9vUeQ7SEUec1ws6y4becam4qmqNXpjraeNiruyJYQ1bWBKsl+dPCFo/Piwf3GkN8Dltamgrroe4G7iHq8d1/+MngPzAMimKAjevDGCHaR8hrRDenVNsV17UNOM+SLKGNFbQnFXLlJZ0w+juMHgsuEylZcViKWVmICStLxtJUTLPkgE1TykX/xTcfnGnlOgEAAA==[0mAbort
+Approved by [8mha:////4HpBBrE6nw0G8BpQvyY+wja75yQHEePXpzJfsby7LLypAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgY+/dLi1CL9gsSU3MTsxCIAuVDxkcMAAAA=[0mpadmakar ojha
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

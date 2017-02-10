@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.9">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>padmakar</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.9">
+      <queuingDurationMillis>5</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.0.4">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/jenkins2</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.2.1">
+              <sha1>531f2c80407074b7e9c85df0116ec001f31f9f83</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/jenkins2</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+      <remoteUrls>
+        <string>https://github.com/dvopsway/solitaire-systemjs-course</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.0.4">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/jenkins2</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/Users/padmakar/.jenkins/workspace/solitaire-2@script</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.3">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/dvopsway/solitaire-systemjs-course</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.5">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>padmakar</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>padmakar</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>padmakar</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>padmakar</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>padmakar</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>padmakar</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>padmakar</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>padmakar</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+  </actions>
+  <queueId>77</queueId>
+  <timestamp>1486731146071</timestamp>
+  <startTime>1486731146072</startTime>
+  <result>ABORTED</result>
+  <duration>318666</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>ABORTED</result>
+    <script>stage &apos;CI&apos;
+node {
+    checkout scm
+    //git branch: &apos;jenkins2-course&apos;, 
+    //    url: &apos;https://github.com/g0t4/solitaire-systemjs-course&apos;
+
+    // pull dependencies from npm
+    // on windows use: bat &apos;npm install&apos;
+    sh &apos;npm install&apos;
+
+    // stash code &amp; dependencies to expedite subsequent testing
+    // and ensure same code &amp; dependencies are used throughout the pipeline
+    // stash is a temporary archive
+    stash name: &apos;everything&apos;, 
+          excludes: &apos;test-results/**&apos;, 
+          includes: &apos;**&apos;
+    
+    // test with PhantomJS for &quot;fast&quot; &quot;generic&quot; results
+    // on windows use: bat &apos;npm run test-single-run -- --browsers PhantomJS&apos;
+    sh &apos;npm run test-single-run -- --browsers PhantomJS&apos;
+    
+    // archive karma test results (karma is configured to export junit xml files)
+    step([$class: &apos;JUnitResultArchiver&apos;, 
+          testResults: &apos;test-results/**/test-results.xml&apos;])
+          
+}
+
+stage &apos;Browser Testing&apos;
+parallel chrome:{
+    runTests(&apos;Chrome&apos;)
+},firefox:{
+    runTests(&apos;Firefox&apos;)
+},safari:{
+    runTests(&apos;Safari&apos;)
+}
+
+def runTests(browser){
+    node{
+        sh &apos;rm -rf *&apos;
+        unstash &apos;everything&apos;
+        sh &quot;npm run test-single-run -- --browsers ${browser}&quot;
+        step([$class: &apos;JUnitResultArchiver&apos;, 
+            testResults: &apos;test-results/**/test-results.xml&apos;])
+    }
+}
+
+stage &apos;Archive&apos;
+node {
+    unstash &apos;everything&apos;
+    archiveArtifacts &apos;app/**&apos;
+}
+
+node {
+    notify(&apos;deploy to stage&apos;)
+}
+
+input &apos;deploy to stage?&apos;
+
+stage name: &apos;Deploy to staging&apos;, concurrency: 1
+node {
+    // write build number to index page so we can see this update
+    // on windows use: bat &quot;echo &apos;&lt;h1&gt;${env.BUILD_DISPLAY_NAME}&lt;/h1&gt;&apos; &gt;&gt; app/index.html&quot;
+    sh &quot;echo &apos;&lt;h1&gt;${env.BUILD_DISPLAY_NAME}&lt;/h1&gt;&apos; &gt;&gt; app/index.html&quot;
+    
+    // deploy to a docker container mapped to port 3000
+    // on windows use: bat &apos;docker-compose up -d --build&apos;
+    sh &apos;docker-compose up -d --build&apos;
+    
+    notify &apos;Solitaire Deployed!&apos;
+}
+
+def notify(status){
+    emailext (
+      to: &quot;wesmdemos@gmail.com&quot;,
+      subject: &quot;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;,
+      body: &quot;&quot;&quot;&lt;p&gt;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check console output at &lt;a href=&apos;${env.BUILD_URL}&apos;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&lt;/p&gt;&quot;&quot;&quot;,
+    )
+}
+</script>
+    <loadedScripts class="map"/>
+    <sandbox>true</sandbox>
+    <iota>12</iota>
+    <head>1:12</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.4">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/dvopsway/solitaire-systemjs-course</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/jenkins2</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/Users/padmakar/.jenkins/workspace/solitaire-2@script</workspace>
+      <changelogFile>/Users/padmakar/.jenkins/jobs/solitaire-2/builds/1/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" reference="../../org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout/scm"/>
+      <node></node>
+      <workspace>/Users/padmakar/.jenkins/workspace/solitaire-2</workspace>
+      <changelogFile>/Users/padmakar/.jenkins/jobs/solitaire-2/builds/1/changelog1.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

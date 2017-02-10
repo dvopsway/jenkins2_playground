@@ -1,8 +1,8 @@
-Started on Feb 9, 2017 7:01:00 PM
+Started on 10 Feb, 2017 7:26:42 PM
 Using strategy: Default
 [poll] Last Built Revision: Revision 3485f9632e9b2fd89ebc6c874aa6b9a9a9db878e (refs/remotes/origin/master)
  > git ls-remote -h https://github.com/dvopsway/jenkins2-course-spring-boot.git # timeout=10
 Found 7 remote heads on https://github.com/dvopsway/jenkins2-course-spring-boot.git
 [poll] Latest remote head revision on refs/heads/master is: 3485f9632e9b2fd89ebc6c874aa6b9a9a9db878e - already built by 15
-Done. Took 1.5 sec
+Done. Took 0.99 sec
 No changes

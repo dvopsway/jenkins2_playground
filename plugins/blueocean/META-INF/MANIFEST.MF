@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: vivek
+Build-Jdk: 1.8.0_112
+Extension-Name: blueocean
+Specification-Title: Blue Ocean is a new project that rethinks the use
+ r experience of Jenkins. Designed from the ground up for Jenkins Pipe
+ line and compatible with Freestyle jobs, Blue Ocean reduces clutter a
+ nd increases clarity for every member of your team.
+Implementation-Title: blueocean
+Implementation-Version: 1.0.0-b22
+Group-Id: io.jenkins.blueocean
+Short-Name: blueocean
+Long-Name: Blue Ocean beta
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin
+Plugin-Version: 1.0.0-b22
+Hudson-Version: 2.7.1
+Jenkins-Version: 2.7.1
+Plugin-Dependencies: blueocean-rest:1.0.0-b22,blueocean-github-pipelin
+ e:1.0.0-b22,blueocean-display-url:1.4,blueocean-dashboard:1.0.0-b22,b
+ lueocean-commons:1.0.0-b22,blueocean-config:1.0.0-b22,blueocean-git-p
+ ipeline:1.0.0-b22,blueocean-rest-impl:1.0.0-b22,blueocean-i18n:1.0.0-
+ b22,blueocean-web:1.0.0-b22,blueocean-jwt:1.0.0-b22,blueocean-persona
+ lization:1.0.0-b22,blueocean-pipeline-api-impl:1.0.0-b22,blueocean-au
+ tofavorite:0.6
+Plugin-Developers: Thorsten Iberian Sumurai:scherler:,Cliff Meyers:cli
+ ffmeyers:,Tom Fennelly:tfennelly:,Vivek Pandey:vivek:,Kohsuke:kohsuke
+ :,Josh McDonald:sophistifunk:,Ivan Meredith:imeredith:,Michael Neale:
+ michaelneale:,Keith Zantow:kzantow:,James Dumay:i386:,Marc:marcesher:
+ ,Paul Dragoonis:dragoonis:,Ivan Santos:pragmaticivan:,Peter Dave Hell
+ o:PeterDaveHello:,Alexandru Somai:alexsomai:
+Support-Dynamic-Loading: true
+

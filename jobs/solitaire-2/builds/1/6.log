@@ -1,0 +1,16 @@
+Cloning the remote Git repository
+Cloning repository https://github.com/dvopsway/solitaire-systemjs-course
+ > git init /Users/padmakar/.jenkins/workspace/solitaire-2 # timeout=10
+Fetching upstream changes from https://github.com/dvopsway/solitaire-systemjs-course
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/dvopsway/solitaire-systemjs-course +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/dvopsway/solitaire-systemjs-course # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/dvopsway/solitaire-systemjs-course # timeout=10
+Fetching upstream changes from https://github.com/dvopsway/solitaire-systemjs-course
+ > git fetch --tags --progress https://github.com/dvopsway/solitaire-systemjs-course +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/jenkins2^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/jenkins2^{commit} # timeout=10
+Checking out Revision 531f2c80407074b7e9c85df0116ec001f31f9f83 (refs/remotes/origin/jenkins2)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 531f2c80407074b7e9c85df0116ec001f31f9f83

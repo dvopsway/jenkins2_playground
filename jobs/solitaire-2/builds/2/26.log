@@ -1,0 +1,2 @@
+[solitaire-2] Running shell script
++ rm -rf Dockerfile Jenkinsfile LICENSE app bower.json docker-compose.yml karma.conf.js node_modules package.json test-results tests

@@ -1,0 +1,14 @@
+[solitaire-2] Running shell script
++ docker-compose up -d --build
+Creating network "solitaire2_default" with the default driver
+Building solitaire
+Step 1/2 : FROM nginx:1.10.1-alpine
+ ---> 2cd900f340dd
+Step 2/2 : ADD app/ /usr/share/nginx/html
+ ---> 7acbfd26f46a
+Removing intermediate container afbb3c17818d
+Successfully built 7acbfd26f46a
+Creating solitaire2_solitaire_1
+
+ERROR: for solitaire  Cannot start service solitaire: driver failed programming external connectivity on endpoint solitaire2_solitaire_1 (d93e34ea1be7a0ca87fb9fdfe332071435f83a3db93b9db62dc84002b0a583ff): Bind for 0.0.0.0:3000 failed: port is already allocated
+Encountered errors while bringing up the project.

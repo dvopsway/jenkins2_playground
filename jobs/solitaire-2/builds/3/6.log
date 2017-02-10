@@ -1,0 +1,12 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dvopsway/solitaire-systemjs-course # timeout=10
+Fetching upstream changes from https://github.com/dvopsway/solitaire-systemjs-course
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/dvopsway/solitaire-systemjs-course +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/jenkins2-course-jf^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/jenkins2-course-jf^{commit} # timeout=10
+Checking out Revision 15303a3f6d8df93000df30bbec1194a81f380f3c (refs/remotes/origin/jenkins2-course-jf)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 15303a3f6d8df93000df30bbec1194a81f380f3c
+ > git rev-list 15303a3f6d8df93000df30bbec1194a81f380f3c # timeout=10

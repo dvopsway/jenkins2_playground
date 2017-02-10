@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.12">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@2.26">
+    <parentIds>
+      <string>56</string>
+    </parentIds>
+    <id>57</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.input.InputStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>UTF-8</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.support.actions.PauseAction>
+      <cause>Input</cause>
+      <startTime>1486728476153</startTime>
+      <endTime>1486728905264</endTime>
+    </org.jenkinsci.plugins.workflow.support.actions.PauseAction>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.10">
+      <startTime>1486728476168</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

@@ -1,0 +1,14 @@
+[solitaire] Running shell script
++ docker-compose up -d --build
+Creating network "solitaire_default" with the default driver
+Building solitaire
+Step 1/2 : FROM nginx:1.10.1-alpine
+1.10.1-alpine: Pulling from library/nginx
+Digest: sha256:dabd1d182f12e2a7d372338dfd0cde303ef042a6ba01cc829ef464982f9c9e2c
+Status: Downloaded newer image for nginx:1.10.1-alpine
+ ---> 2cd900f340dd
+Step 2/2 : ADD app/ /usr/share/nginx/html
+ ---> 1243c12c5dbb
+Removing intermediate container 9755477b2b0c
+Successfully built 1243c12c5dbb
+Creating solitaire_solitaire_1

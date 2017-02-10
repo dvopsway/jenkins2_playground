@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.9">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers/>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.26">
+    <script>
+node {
+    stage &apos;CI&apos;
+    git branch: &apos;jenkins2-course&apos;, 
+        url: &apos;https://github.com/g0t4/solitaire-systemjs-course&apos;
+
+    // pull dependencies from npm
+    // on windows use: bat &apos;npm install&apos;
+    sh &apos;npm install&apos;
+
+    // stash code &amp; dependencies to expedite subsequent testing
+    // and ensure same code &amp; dependencies are used throughout the pipeline
+    // stash is a temporary archive
+    stash name: &apos;everything&apos;, 
+          excludes: &apos;test-results/**&apos;, 
+          includes: &apos;**&apos;
+    
+    // test with PhantomJS for &quot;fast&quot; &quot;generic&quot; results
+    // on windows use: bat &apos;npm run test-single-run -- --browsers PhantomJS&apos;
+    sh &apos;npm run test-single-run -- --browsers PhantomJS&apos;
+    
+    // archive karma test results (karma is configured to export junit xml files)
+    step([$class: &apos;JUnitResultArchiver&apos;, 
+          testResults: &apos;test-results/**/test-results.xml&apos;])
+          
+}
+
+stage &apos;Browser Testing&apos;
+parallel chrome:{
+    runTests(&apos;Chrome&apos;)
+},firefox:{
+    runTests(&apos;Firefox&apos;)
+},safari:{
+    runTests(&apos;Safari&apos;)
+}
+
+def runTests(browser){
+    node{
+        sh &apos;rm -rf *&apos;
+        unstash &apos;everything&apos;
+        sh &quot;npm run test-single-run -- --browsers ${browser}&quot;
+        step([$class: &apos;JUnitResultArchiver&apos;, 
+            testResults: &apos;test-results/**/test-results.xml&apos;])
+    }
+}
+
+stage &apos;Archive&apos;
+node {
+    unstash &apos;everything&apos;
+    archiveArtifacts &apos;app/**&apos;
+}
+
+node {
+    notify(&apos;deploy to stage&apos;)
+}
+
+input &apos;deploy to stage?&apos;
+
+stage name: &apos;Deploy to staging&apos;, concurrency: 1
+node {
+    // write build number to index page so we can see this update
+    // on windows use: bat &quot;echo &apos;&lt;h1&gt;${env.BUILD_DISPLAY_NAME}&lt;/h1&gt;&apos; &gt;&gt; app/index.html&quot;
+    sh &quot;echo &apos;&lt;h1&gt;${env.BUILD_DISPLAY_NAME}&lt;/h1&gt;&apos; &gt;&gt; app/index.html&quot;
+    
+    // deploy to a docker container mapped to port 3000
+    // on windows use: bat &apos;docker-compose up -d --build&apos;
+    sh &apos;docker-compose up -d --build&apos;
+    
+    notify &apos;Solitaire Deployed!&apos;
+}
+
+def notify(status){
+    emailext (
+      to: &quot;wesmdemos@gmail.com&quot;,
+      subject: &quot;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;,
+      body: &quot;&quot;&quot;&lt;p&gt;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check console output at &lt;a href=&apos;${env.BUILD_URL}&apos;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&lt;/p&gt;&quot;&quot;&quot;,
+    )
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+</flow-definition>

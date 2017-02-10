@@ -1,0 +1,17 @@
+[solitaire-2] Running shell script
++ npm run test-single-run -- --browsers PhantomJS
+
+> solitaire@0.0.0 test-single-run /Users/padmakar/.jenkins/workspace/solitaire-2
+> karma start karma.conf.js --single-run --browsers PhantomJS
+
+[32m10 02 2017 18:23:23.105:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9876/
+[33m10 02 2017 18:23:23.108:WARN [launcher]: [39mCan not load "PhantomJS", it is not registered!
+  Perhaps you are missing some plugin?
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process

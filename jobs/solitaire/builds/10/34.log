@@ -1,0 +1,30 @@
+[solitaire@2] Running shell script
++ npm run test-single-run -- --browsers safari
+
+> solitaire@0.0.0 test-single-run /Users/padmakar/.jenkins/workspace/solitaire@2
+> karma start karma.conf.js --single-run --browsers safari
+
+[32m10 02 2017 16:33:02.297:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9876/
+[33m10 02 2017 16:33:02.302:WARN [launcher]: [39mCan not load "safari", it is not registered!
+  Perhaps you are missing some plugin?
+Sending interrupt signal to process
+sh: line 1: 98999 Terminated: 15          JENKINS_SERVER_COOKIE=$jsc '/Users/padmakar/.jenkins/workspace/solitaire@2@tmp/durable-2479483c/script.sh' > '/Users/padmakar/.jenkins/workspace/solitaire@2@tmp/durable-2479483c/jenkins-log.txt' 2>&1
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+Sending interrupt signal to process
+After 10s process did not stop

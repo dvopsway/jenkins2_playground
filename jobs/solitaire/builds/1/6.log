@@ -1,0 +1,19 @@
+Cloning the remote Git repository
+Cloning repository https://github.com/g0t4/solitaire-systemjs-course
+ > git init /Users/padmakar/.jenkins/workspace/solitaire # timeout=10
+Fetching upstream changes from https://github.com/g0t4/solitaire-systemjs-course
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/g0t4/solitaire-systemjs-course +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/g0t4/solitaire-systemjs-course # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/g0t4/solitaire-systemjs-course # timeout=10
+Fetching upstream changes from https://github.com/g0t4/solitaire-systemjs-course
+ > git fetch --tags --progress https://github.com/g0t4/solitaire-systemjs-course +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/jenkins2-course^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/jenkins2-course^{commit} # timeout=10
+Checking out Revision 67dc22287df1d73280b6e1f4b25abb60d526e773 (refs/remotes/origin/jenkins2-course)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 67dc22287df1d73280b6e1f4b25abb60d526e773
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b jenkins2-course 67dc22287df1d73280b6e1f4b25abb60d526e773
+First time build. Skipping changelog.

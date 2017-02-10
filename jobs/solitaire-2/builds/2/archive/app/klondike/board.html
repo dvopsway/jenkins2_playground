@@ -1,0 +1,19 @@
+<p>
+  <button ng-click="game.newGame()">New Game</button>
+  Score: {{ scoring.score }}
+</p>
+
+<div class="top-row">
+  <s-foundation ng-repeat="foundation in game.foundations"></s-foundation>
+
+  <s-no-pile></s-no-pile>
+  <s-no-pile></s-no-pile>
+
+  <s-remainder></s-remainder>
+  <s-waste></s-waste>
+</div>
+
+<div class="tableau-row">
+  <s-no-pile></s-no-pile>
+  <s-tableau ng-repeat="tableau in game.tableaus"></s-tableau>
+</div>

@@ -1,0 +1,12 @@
+[solitaire] Running shell script
++ npm run test-single-run -- --browsers chrome
+
+> solitaire@0.0.0 test-single-run /private/tmp/jenkins-agent/workspace/solitaire
+> karma start karma.conf.js --single-run --browsers chrome
+
+[33m10 02 2017 16:33:05.239:WARN [karma]: [39mPort 9876 in use
+[33m10 02 2017 16:33:05.241:WARN [karma]: [39mPort 9877 in use
+[32m10 02 2017 16:33:05.242:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9878/
+[33m10 02 2017 16:33:05.243:WARN [launcher]: [39mCan not load "chrome", it is not registered!
+  Perhaps you are missing some plugin?
+Sending interrupt signal to process

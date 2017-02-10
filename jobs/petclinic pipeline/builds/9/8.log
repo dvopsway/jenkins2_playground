@@ -1,0 +1,15 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dvopsway/jenkins2-course-spring-petclinic.git # timeout=10
+Fetching upstream changes from https://github.com/dvopsway/jenkins2-course-spring-petclinic.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/dvopsway/jenkins2-course-spring-petclinic.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 22f084e7740f4e2293557beeb3c3b850ae0e321b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 22f084e7740f4e2293557beeb3c3b850ae0e321b
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 22f084e7740f4e2293557beeb3c3b850ae0e321b
+ > git rev-list 22f084e7740f4e2293557beeb3c3b850ae0e321b # timeout=10

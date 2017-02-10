@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<testsuite name="Firefox 37.0.0 (Mac OS X 10.12.0)" package="" timestamp="2017-02-10T13:06:48" id="0" hostname="paddy-mac.local" tests="64" errors="0" failures="0" time="0.345">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:37.0) Gecko/20100101 Firefox/37.0"/>
+  </properties>
+  <testcase name="should link to the image of the suit and rank" time="0.01" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A card"/>
+  <testcase name="should map its color to black or red based on suit" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A card"/>
+  <testcase name="should have 52 cards" time="0.011" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A deck of cards"/>
+  <testcase name="should start with aces" time="0.006" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A deck of cards"/>
+  <testcase name="should end with twos" time="0.005" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A deck of cards"/>
+  <testcase name="should shuffle" time="0.004" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A deck of cards"/>
+  <testcase name="should load a new game" time="0.031" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A klondike board controller"/>
+  <testcase name="should load the score" time="0.02" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A klondike board controller"/>
+  <testcase name="should deal seven tableau piles of increasing piles." time="0.004" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should deal remainder to deck turned down." time="0.004" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should not deal any duplicate cards." time="0.005" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should deal tableau piles with last card turned up." time="0.004" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should allow moving first tableau's ace to first foundation" time="0.006" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should allow moving second tableau's ace to first foundation and turns over next card in second tableau" time="0.053" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should not allow moving third tableau's king of spades to first foundation" time="0.019" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should not allow moving remainder's two of diamonds to first tableau's ace of clubs" time="0.003" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name=", if we reverse remainder (hack the scenario) so 7 of clubs is on top, should allow moving foundation's 7 of clubs to last tableau's 8 of diamonds" time="0.025" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should allow moving remainder to foundation" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="should not allow moving remainder to foundation if not next rank in suit" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name=", tryMoveTopCardToAnyFoundation should moveCardsFrom first tableau's ace to first foundation" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name=", tryMoveTopCardToAnyFoundation should not error on empty pile" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike"/>
+  <testcase name="that is empty will accept an ace" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile"/>
+  <testcase name="that is empty will not accept a rank other than ace" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile"/>
+  <testcase name="will accept next rank in same suit" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile"/>
+  <testcase name="will not accept same suit but not next rank" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile"/>
+  <testcase name="will not accept different suit" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile"/>
+  <testcase name="should be empty" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile"/>
+  <testcase name="should return undefined as the top card" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile"/>
+  <testcase name=", removeCard should not error" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile"/>
+  <testcase name="should not be empty" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile"/>
+  <testcase name="should return the last card as the top card" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile"/>
+  <testcase name=", removeCard should not error if card not in pile" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile"/>
+  <testcase name=", removeCard should remove card" time="0.063" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile"/>
+  <testcase name=", addTopCard should put card on top" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile"/>
+  <testcase name="should accept cards into the remainder" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile"/>
+  <testcase name="should flip the top card onto the waste" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile"/>
+  <testcase name="construct an empty waste pile" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile"/>
+  <testcase name="recycle waste cards back into remainder" time="0.003" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile"/>
+  <testcase name="turn cards down in remainder pile" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile"/>
+  <testcase name="reverse cards into remainder" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile"/>
+  <testcase name="that is empty will accept a king" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="that is empty will not accept a rank other than king" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will accept lower rank in alternate color" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will not accept lower rank in same color" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will not accept different color if not next lower rank" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will flip over next card if top card removed" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will not error if no next card after removing top" time="0" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will not error if event received to move from pile that doesn't exist" time="0.006" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will accept all of another tableau" time="0.004" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will accept part of another tableau" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will not accept turned down part of another tableau" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="will not accept multiple from a pile that isn't another tableau" time="0.001" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile"/>
+  <testcase name="should start at zero" time="0.004" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should reset score on a new game" time="0.003" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should add 5 when waste moved to tableau" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should add 10 when waste moved to foundation" time="0.003" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should add 10 when tableau moved to foundation" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should subtract 15 when foundation moved to tableau" time="0.004" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should add nothing when foundation moved to foundation" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should add nothing when tableau moved to tableau" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should add 5 when tableau card turned over because top was removed" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should not add 5 when tableau card already turned over" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should subtract 100 when waste recycled" time="0.002" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <testcase name="should not go negative when waste recycled" time="0.005" classname="Firefox_37_0_0_(Mac_OS_X_10_12_0).The score"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.9">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>padmakar</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.9">
+      <queuingDurationMillis>4</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.5">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>27</queueId>
+  <timestamp>1486724458321</timestamp>
+  <startTime>1486724458323</startTime>
+  <result>FAILURE</result>
+  <duration>30344</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>
+node {
+    stage &apos;CI&apos;
+    git branch: &apos;jenkins2-course&apos;, 
+        url: &apos;https://github.com/g0t4/solitaire-systemjs-course&apos;
+
+    // pull dependencies from npm
+    // on windows use: bat &apos;npm install&apos;
+    sh &apos;npm install&apos;
+
+    // stash code &amp; dependencies to expedite subsequent testing
+    // and ensure same code &amp; dependencies are used throughout the pipeline
+    // stash is a temporary archive
+    stash name: &apos;everything&apos;, 
+          excludes: &apos;test-results/**&apos;, 
+          includes: &apos;**&apos;
+    
+    // test with PhantomJS for &quot;fast&quot; &quot;generic&quot; results
+    // on windows use: bat &apos;npm run test-single-run -- --browsers PhantomJS&apos;
+    sh &apos;npm run test-single-run -- --browsers PhantomJS&apos;
+    
+    // archive karma test results (karma is configured to export junit xml files)
+    step([$class: &apos;JUnitResultArchiver&apos;, 
+          testResults: &apos;test-results/**/test-results.xml&apos;])
+    
+    stage &apos;Archive&apos;
+    archiveArtifacts &apos;app/**&apos;
+          
+}
+
+stage &apos;Browser Testing&apos;
+parallel chrome:{
+    runTests(&apos;chrome&apos;)
+},firefox:{
+    runTests(&apos;firefox&apos;)
+},safari:{
+    runTests(&apos;safari&apos;)
+}
+
+def runTests(browser){
+    node{
+        sh &apos;rm -rf *&apos;
+        unstash &apos;everything&apos;
+        sh &quot;npm run test-single-run -- --browsers ${browser}&quot;
+        step([$class: &apos;JUnitResultArchiver&apos;, 
+            testResults: &apos;test-results/**/test-results.xml&apos;])
+    }
+}
+
+def notify(status){
+    emailext (
+      to: &quot;wesmdemos@gmail.com&quot;,
+      subject: &quot;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;,
+      body: &quot;&quot;&quot;&lt;p&gt;${status}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;:&lt;/p&gt;
+        &lt;p&gt;Check console output at &lt;a href=&apos;${env.BUILD_URL}&apos;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&lt;/p&gt;&quot;&quot;&quot;,
+    )
+}</script>
+    <loadedScripts class="map"/>
+    <sandbox>true</sandbox>
+    <iota>9</iota>
+    <head>1:9</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,8 @@
++ npm run test-single-run -- --browsers safari
+
+> solitaire@0.0.0 test-single-run /Users/padmakar/.jenkins/workspace/solitaire@2
+> karma start karma.conf.js --single-run --browsers safari
+
+[32m10 02 2017 16:33:02.297:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9876/
+[33m10 02 2017 16:33:02.302:WARN [launcher]: [39mCan not load "safari", it is not registered!
+  Perhaps you are missing some plugin?

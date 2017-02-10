@@ -1,0 +1,9 @@
++ npm run test-single-run -- --browsers firefox
+
+> solitaire@0.0.0 test-single-run /Users/padmakar/.jenkins/workspace/solitaire
+> karma start karma.conf.js --single-run --browsers firefox
+
+[33m10 02 2017 16:33:05.178:WARN [karma]: [39mPort 9876 in use
+[32m10 02 2017 16:33:05.185:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9877/
+[33m10 02 2017 16:33:05.187:WARN [launcher]: [39mCan not load "firefox", it is not registered!
+  Perhaps you are missing some plugin?

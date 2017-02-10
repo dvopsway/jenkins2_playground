@@ -1,0 +1,10 @@
+<div class="pile"
+     ng-dblclick="game.tryMoveTopCardToAnyFoundation(tableau)"
+     ng-drop="true" ng-drop-success="tableau.moveCardsFrom($data)"
+     ng-style="{height: tableau.heightForDrop()}">
+  <div ng-repeat="card in tableau.cards"
+       s-card card="card"
+       ng-class="{ 'only-show-top-of-card': card != tableau.topCard() }"
+       ng-drag="card == tableau.topCard()" ng-drag-data="tableau">
+  </div>
+</div>

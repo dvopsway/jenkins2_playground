@@ -1,0 +1,6 @@
+[solitaire] Running shell script
++ npm install
+
+> solitaire@0.0.0 postinstall /Users/padmakar/.jenkins/workspace/solitaire
+> node node_modules/bower/bin/bower install
+

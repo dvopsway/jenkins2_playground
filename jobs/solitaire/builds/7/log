@@ -1,0 +1,303 @@
+Started by user [8mha:////4HpBBrE6nw0G8BpQvyY+wja75yQHEePXpzJfsby7LLypAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgY+/dLi1CL9gsSU3MTsxCIAuVDxkcMAAAA=[0mpadmakar ojha
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on agent in /tmp/jenkins-agent/workspace/solitaire
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (CI)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage CI
+Proceeding
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] git
+Cloning the remote Git repository
+Cloning repository https://github.com/g0t4/solitaire-systemjs-course
+ > git init /tmp/jenkins-agent/workspace/solitaire # timeout=10
+Fetching upstream changes from https://github.com/g0t4/solitaire-systemjs-course
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/g0t4/solitaire-systemjs-course +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/g0t4/solitaire-systemjs-course # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/g0t4/solitaire-systemjs-course # timeout=10
+Fetching upstream changes from https://github.com/g0t4/solitaire-systemjs-course
+ > git fetch --tags --progress https://github.com/g0t4/solitaire-systemjs-course +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/jenkins2-course^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/jenkins2-course^{commit} # timeout=10
+Checking out Revision 67dc22287df1d73280b6e1f4b25abb60d526e773 (refs/remotes/origin/jenkins2-course)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 67dc22287df1d73280b6e1f4b25abb60d526e773
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b jenkins2-course 67dc22287df1d73280b6e1f4b25abb60d526e773
+ > git rev-list 67dc22287df1d73280b6e1f4b25abb60d526e773 # timeout=10
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[solitaire] Running shell script
++ npm install
+npm WARN engine request@2.79.0: wanted: {"node":">= 4"} (current: {"node":"0.10.35","npm":"2.1.18"})
+npm WARN engine form-data@2.1.2: wanted: {"node":">= 0.12"} (current: {"node":"0.10.35","npm":"2.1.18"})
+npm WARN engine hoek@2.16.3: wanted: {"node":">=0.10.40"} (current: {"node":"0.10.35","npm":"2.1.18"})
+npm WARN engine boom@2.10.1: wanted: {"node":">=0.10.40"} (current: {"node":"0.10.35","npm":"2.1.18"})
+npm WARN engine cryptiles@2.0.5: wanted: {"node":">=0.10.40"} (current: {"node":"0.10.35","npm":"2.1.18"})
+
+> phantomjs-prebuilt@2.1.14 install /private/tmp/jenkins-agent/workspace/solitaire/node_modules/karma-phantomjs-launcher/node_modules/phantomjs-prebuilt
+> node install.js
+
+Considering PhantomJS found at /usr/local/bin/phantomjs
+Found PhantomJS at /usr/local/bin/phantomjs ...verifying
+Writing location.js file
+PhantomJS is already installed on PATH at /usr/local/bin/phantomjs
+npm WARN package.json bcrypt-pbkdf@1.0.0 No repository field.
+
+> fsevents@1.0.17 install /private/tmp/jenkins-agent/workspace/solitaire/node_modules/karma/node_modules/chokidar/node_modules/fsevents
+> node-pre-gyp install --fallback-to-build
+
+[fsevents] Success: "/private/tmp/jenkins-agent/workspace/solitaire/node_modules/karma/node_modules/chokidar/node_modules/fsevents/lib/binding/Release/node-v11-darwin-x64/fse.node" already installed
+Pass --update-binary to reinstall or --build-from-source to recompile
+
+> solitaire@0.0.0 postinstall /private/tmp/jenkins-agent/workspace/solitaire
+> node node_modules/bower/bin/bower install
+
+bower angular#1.2.28            cached https://github.com/angular/bower-angular.git#1.2.28
+bower angular#1.2.28          validate 1.2.28 against https://github.com/angular/bower-angular.git#1.2.28
+bower angular-route#1.2.28      cached https://github.com/angular/bower-angular-route.git#1.2.28
+bower angular-route#1.2.28    validate 1.2.28 against https://github.com/angular/bower-angular-route.git#1.2.28
+bower angular-loader#1.2.28     cached https://github.com/angular/bower-angular-loader.git#1.2.28
+bower angular-loader#1.2.28   validate 1.2.28 against https://github.com/angular/bower-angular-loader.git#1.2.28
+bower angular-mocks#1.2.28      cached https://github.com/angular/bower-angular-mocks.git#1.2.28
+bower angular-mocks#1.2.28    validate 1.2.28 against https://github.com/angular/bower-angular-mocks.git#1.2.28
+bower ngDraggable#0.1.8         cached https://github.com/fatlinesofcode/ngDraggable.git#0.1.8
+bower ngDraggable#0.1.8       validate 0.1.8 against https://github.com/fatlinesofcode/ngDraggable.git#0.1.8
+bower underscore#1.8.2          cached https://github.com/jashkenas/underscore.git#1.8.2
+bower underscore#1.8.2        validate 1.8.2 against https://github.com/jashkenas/underscore.git#1.8.2
+bower ngDraggable#0.1.8        install ngDraggable#0.1.8
+bower angular-loader#1.2.28    install angular-loader#1.2.28
+bower angular#1.2.28           install angular#1.2.28
+bower angular-mocks#1.2.28     install angular-mocks#1.2.28
+bower angular-route#1.2.28     install angular-route#1.2.28
+bower underscore#1.8.2         install underscore#1.8.2
+
+ngDraggable#0.1.8 app/bower_components/ngDraggable
+└── angular#1.2.28
+
+angular-loader#1.2.28 app/bower_components/angular-loader
+└── angular#1.2.28
+
+angular#1.2.28 app/bower_components/angular
+
+angular-mocks#1.2.28 app/bower_components/angular-mocks
+└── angular#1.2.28
+
+angular-route#1.2.28 app/bower_components/angular-route
+└── angular#1.2.28
+
+underscore#1.8.2 app/bower_components/underscore
+karma-safari-launcher@1.0.0 node_modules/karma-safari-launcher
+
+karma-firefox-launcher@0.1.7 node_modules/karma-firefox-launcher
+
+karma-jasmine@0.3.8 node_modules/karma-jasmine
+
+jasmine-core@2.5.2 node_modules/jasmine-core
+
+karma-chrome-launcher@0.2.3 node_modules/karma-chrome-launcher
+├── fs-access@1.0.1 (null-check@1.0.0)
+└── which@1.2.12 (isexe@1.1.2)
+
+karma-junit-reporter@0.3.8 node_modules/karma-junit-reporter
+└── xmlbuilder@3.1.0 (lodash@3.10.1)
+
+http-server@0.8.5 node_modules/http-server
+├── opener@1.4.2
+├── corser@2.0.1
+├── colors@1.0.3
+├── http-proxy@1.16.2 (eventemitter3@1.2.0, requires-port@1.0.0)
+├── optimist@0.6.1 (wordwrap@0.0.3, minimist@0.0.10)
+├── union@0.4.6 (qs@2.3.3)
+├── ecstatic@0.7.6 (url-join@0.0.1, mime@1.3.4, minimist@1.2.0, he@0.5.0)
+└── portfinder@0.4.0 (async@0.9.0, mkdirp@0.5.1)
+
+karma-phantomjs-launcher@1.0.2 node_modules/karma-phantomjs-launcher
+├── phantomjs-prebuilt@2.1.14 (progress@1.1.8, which@1.2.12, kew@0.7.0, es6-promise@4.0.5, request-progress@2.0.1, fs-extra@1.0.0, hasha@2.2.0, extract-zip@1.5.0, request@2.79.0)
+└── lodash@4.17.4
+
+karma@0.13.22 node_modules/karma
+├── isbinaryfile@3.0.2
+├── batch@0.5.3
+├── di@0.0.1
+├── rimraf@2.5.4
+├── graceful-fs@4.1.11
+├── mime@1.3.4
+├── colors@1.1.2
+├── http-proxy@1.16.2 (eventemitter3@1.2.0, requires-port@1.0.0)
+├── bluebird@2.11.0
+├── optimist@0.6.1 (wordwrap@0.0.3, minimist@0.0.10)
+├── dom-serialize@2.2.1 (void-elements@2.0.1, custom-event@1.0.1, extend@3.0.0, ent@2.2.0)
+├── source-map@0.5.6
+├── minimatch@3.0.3 (brace-expansion@1.1.6)
+├── glob@7.1.1 (path-is-absolute@1.0.1, inherits@2.0.3, fs.realpath@1.0.0, inflight@1.0.6, once@1.4.0)
+├── useragent@2.1.12 (lru-cache@2.2.4, tmp@0.0.31)
+├── connect@3.5.0 (utils-merge@1.0.0, parseurl@1.3.1, debug@2.2.0, finalhandler@0.5.0)
+├── expand-braces@0.1.2 (array-unique@0.2.1, array-slice@0.2.3, braces@0.1.5)
+├── log4js@0.6.38 (readable-stream@1.0.34, semver@4.3.6)
+├── body-parser@1.16.0 (bytes@2.4.0, content-type@1.0.2, depd@1.1.0, qs@6.2.1, debug@2.6.0, iconv-lite@0.4.15, on-finished@2.3.0, raw-body@2.2.0, http-errors@1.5.1, type-is@1.6.14)
+├── lodash@3.10.1
+├── socket.io@1.7.2 (object-assign@4.1.0, socket.io-adapter@0.5.0, debug@2.3.3, has-binary@0.1.7, socket.io-parser@2.3.1, engine.io@1.8.2, socket.io-client@1.7.2)
+├── core-js@2.4.1
+└── chokidar@1.6.1 (path-is-absolute@1.0.1, inherits@2.0.3, async-each@1.0.1, glob-parent@2.0.0, is-glob@2.0.1, is-binary-path@1.0.1, readdirp@2.1.0, anymatch@1.3.0, fsevents@1.0.17)
+
+eslint@1.10.3 node_modules/eslint
+├── path-is-inside@1.0.2
+├── escape-string-regexp@1.0.5
+├── path-is-absolute@1.0.1
+├── object-assign@4.1.1
+├── xml-escape@1.0.0
+├── strip-json-comments@1.0.4
+├── estraverse-fb@1.3.1
+├── globals@8.18.0
+├── estraverse@4.2.0
+├── text-table@0.2.0
+├── esutils@2.0.2
+├── mkdirp@0.5.1 (minimist@0.0.8)
+├── is-resolvable@1.0.0 (tryit@1.0.3)
+├── user-home@2.0.0 (os-homedir@1.0.2)
+├── shelljs@0.5.3
+├── espree@2.2.5
+├── json-stable-stringify@1.0.1 (jsonify@0.0.0)
+├── minimatch@3.0.3 (brace-expansion@1.1.6)
+├── glob@5.0.15 (inherits@2.0.3, inflight@1.0.6, once@1.4.0)
+├── debug@2.6.0 (ms@0.7.2)
+├── optionator@0.6.0 (fast-levenshtein@1.0.7, type-check@0.3.2, deep-is@0.1.3, levn@0.2.5, wordwrap@0.0.3, prelude-ls@1.1.2)
+├── doctrine@0.7.2 (isarray@0.0.1, esutils@1.1.6)
+├── chalk@1.1.3 (supports-color@2.0.0, ansi-styles@2.2.1, strip-ansi@3.0.1, has-ansi@2.0.0)
+├── lodash.omit@3.1.0 (lodash._arraymap@3.0.0, lodash._pickbyarray@3.0.2, lodash._bindcallback@3.0.1, lodash.restparam@3.6.1, lodash.keysin@3.0.8, lodash._baseflatten@3.1.4, lodash._pickbycallback@3.0.0, lodash._basedifference@3.0.3)
+├── lodash.merge@3.3.2 (lodash._arraycopy@3.0.0, lodash._arrayeach@3.0.0, lodash.keysin@3.0.8, lodash._getnative@3.9.1, lodash.istypedarray@3.0.6, lodash.isarray@3.0.4, lodash.isarguments@3.1.0, lodash.keys@3.1.2, lodash.isplainobject@3.2.0, lodash.toplainobject@3.0.0, lodash._createassigner@3.1.1)
+├── lodash.clonedeep@3.0.2 (lodash._bindcallback@3.0.1, lodash._baseclone@3.3.0)
+├── concat-stream@1.6.0 (inherits@2.0.3, typedarray@0.0.6, readable-stream@2.2.2)
+├── is-my-json-valid@2.15.0 (jsonpointer@4.0.1, generate-function@2.0.0, xtend@4.0.1, generate-object-property@1.2.0)
+├── file-entry-cache@1.3.1 (flat-cache@1.2.2)
+├── js-yaml@3.4.5 (esprima@2.7.3, argparse@1.0.9)
+├── inquirer@0.11.4 (strip-ansi@3.0.1, ansi-regex@2.1.1, ansi-escapes@1.4.0, figures@1.7.0, through@2.3.8, cli-width@1.1.1, run-async@0.1.0, readline2@1.0.1, string-width@1.0.2, cli-cursor@1.0.2, rx-lite@3.1.2, lodash@3.10.1)
+├── escope@3.6.0 (esrecurse@4.1.0, es6-weak-map@2.0.1, es6-map@0.1.4)
+└── handlebars@4.0.6 (async@1.5.2, source-map@0.4.4, optimist@0.6.1, uglify-js@2.7.5)
+
+bower@1.8.0 node_modules/bower
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stash
+Stashed 16681 file(s)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[solitaire] Running shell script
++ npm run test-single-run -- --browsers PhantomJS
+
+> solitaire@0.0.0 test-single-run /private/tmp/jenkins-agent/workspace/solitaire
+> karma start karma.conf.js --single-run --browsers PhantomJS
+
+[32m10 02 2017 16:20:10.975:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9876/
+[32m10 02 2017 16:20:10.984:INFO [launcher]: [39mStarting browser PhantomJS
+[32m10 02 2017 16:20:13.137:INFO [PhantomJS 2.1.1 (Mac OS X 0.0.0)]: [39mConnected on socket OFKL_cIBv4icJsYwAAAA with id 80858681
+PhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 0 of 64 SUCCESS (0 secs / 0 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 1 of 64 SUCCESS (0 secs / 0.006 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 2 of 64 SUCCESS (0 secs / 0.007 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 3 of 64 SUCCESS (0 secs / 0.027 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 4 of 64 SUCCESS (0 secs / 0.037 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 5 of 64 SUCCESS (0 secs / 0.043 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 6 of 64 SUCCESS (0 secs / 0.048 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 7 of 64 SUCCESS (0 secs / 0.078 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 8 of 64 SUCCESS (0 secs / 0.083 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 9 of 64 SUCCESS (0 secs / 0.084 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 10 of 64 SUCCESS (0 secs / 0.097 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 11 of 64 SUCCESS (0 secs / 0.1 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 12 of 64 SUCCESS (0 secs / 0.135 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 13 of 64 SUCCESS (0 secs / 0.146 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 14 of 64 SUCCESS (0 secs / 0.149 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 15 of 64 SUCCESS (0 secs / 0.15 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 16 of 64 SUCCESS (0 secs / 0.163 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 17 of 64 SUCCESS (0 secs / 0.167 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 18 of 64 SUCCESS (0 secs / 0.197 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 19 of 64 SUCCESS (0 secs / 0.2 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 20 of 64 SUCCESS (0 secs / 0.213 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 21 of 64 SUCCESS (0 secs / 0.214 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 22 of 64 SUCCESS (0 secs / 0.214 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 23 of 64 SUCCESS (0 secs / 0.214 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 24 of 64 SUCCESS (0 secs / 0.214 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 25 of 64 SUCCESS (0 secs / 0.215 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 26 of 64 SUCCESS (0 secs / 0.215 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 27 of 64 SUCCESS (0 secs / 0.215 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 28 of 64 SUCCESS (0 secs / 0.215 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 29 of 64 SUCCESS (0 secs / 0.216 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 30 of 64 SUCCESS (0 secs / 0.217 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 31 of 64 SUCCESS (0 secs / 0.218 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 32 of 64 SUCCESS (0 secs / 0.219 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 33 of 64 SUCCESS (0 secs / 0.221 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 34 of 64 SUCCESS (0 secs / 0.222 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 35 of 64 SUCCESS (0 secs / 0.223 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 36 of 64 SUCCESS (0 secs / 0.235 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 37 of 64 SUCCESS (0 secs / 0.237 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 38 of 64 SUCCESS (0 secs / 0.238 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 39 of 64 SUCCESS (0 secs / 0.238 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 40 of 64 SUCCESS (0 secs / 0.241 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 41 of 64 SUCCESS (0 secs / 0.242 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 42 of 64 SUCCESS (0 secs / 0.245 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 43 of 64 SUCCESS (0 secs / 0.248 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 44 of 64 SUCCESS (0 secs / 0.248 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 45 of 64 SUCCESS (0 secs / 0.248 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 46 of 64 SUCCESS (0 secs / 0.249 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 47 of 64 SUCCESS (0 secs / 0.249 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 48 of 64 SUCCESS (0 secs / 0.255 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 49 of 64 SUCCESS (0 secs / 0.263 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 50 of 64 SUCCESS (0 secs / 0.264 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 51 of 64 SUCCESS (0 secs / 0.264 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 52 of 64 SUCCESS (0 secs / 0.265 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 53 of 64 SUCCESS (0 secs / 0.267 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 54 of 64 SUCCESS (0 secs / 0.274 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 55 of 64 SUCCESS (0 secs / 0.278 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 56 of 64 SUCCESS (0 secs / 0.279 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 57 of 64 SUCCESS (0 secs / 0.291 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 58 of 64 SUCCESS (0 secs / 0.293 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 59 of 64 SUCCESS (0 secs / 0.295 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 60 of 64 SUCCESS (0 secs / 0.297 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 61 of 64 SUCCESS (0 secs / 0.304 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 62 of 64 SUCCESS (0 secs / 0.307 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 63 of 64 SUCCESS (0 secs / 0.309 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 64 of 64 SUCCESS (0 secs / 0.31 secs)
+[1A[2KPhantomJS 2.1.1 (Mac OS X 0.0.0): Executed 64 of 64 SUCCESS (0.205 secs / 0.31 secs)
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] step
+Recording test results
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage (Archive)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Archive
+Proceeding
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] step
+Archiving artifacts
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on agent in /tmp/jenkins-agent/workspace/solitaire
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[solitaire] Running shell script
++ ls
+Dockerfile
+LICENSE
+app
+bower.json
+docker-compose.yml
+karma.conf.js
+node_modules
+package.json
+test-results
+tests
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[solitaire] Running shell script
++ rm -rf Dockerfile LICENSE app bower.json docker-compose.yml karma.conf.js node_modules package.json test-results tests
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] unstash
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[solitaire] Running shell script
++ ls
+Dockerfile
+LICENSE
+app
+bower.json
+docker-compose.yml
+karma.conf.js
+node_modules
+package.json
+tests
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4Nlyw2JXm5AjSImojoTQ8wV314eDZgCeBdHeifdcjlkOAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

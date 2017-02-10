@@ -1,0 +1,1859 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.19">
+  <suites>
+    <suite>
+      <file>/tmp/jenkins-agent/workspace/solitaire/test-results/PhantomJS_2.1.1_(Mac_OS_X_0.0.0)/test-results.xml</file>
+      <name>PhantomJS 2.1.1 (Mac OS X 0.0.0)</name>
+      <stdout>
+    
+
+  </stdout>
+      <stderr></stderr>
+      <duration>0.103</duration>
+      <timestamp>2017-02-10T12:07:17</timestamp>
+      <id>0</id>
+      <time>0.103</time>
+      <cases>
+        <case>
+          <duration>0.005</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A card</className>
+          <testName>should link to the image of the suit and rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A card</className>
+          <testName>should map its color to black or red based on suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.009</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A deck of cards</className>
+          <testName>should have 52 cards</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A deck of cards</className>
+          <testName>should start with aces</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A deck of cards</className>
+          <testName>should end with twos</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A deck of cards</className>
+          <testName>should shuffle</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.009</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A klondike board controller</className>
+          <testName>should load a new game</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A klondike board controller</className>
+          <testName>should load the score</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should deal seven tableau piles of increasing piles.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should deal remainder to deck turned down.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should not deal any duplicate cards.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should deal tableau piles with last card turned up.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should allow moving first tableau&apos;s ace to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should allow moving second tableau&apos;s ace to first foundation and turns over next card in second tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should not allow moving third tableau&apos;s king of spades to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should not allow moving remainder&apos;s two of diamonds to first tableau&apos;s ace of clubs</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>, if we reverse remainder (hack the scenario) so 7 of clubs is on top, should allow moving foundation&apos;s 7 of clubs to last tableau&apos;s 8 of diamonds</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should allow moving remainder to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>should not allow moving remainder to foundation if not next rank in suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>, tryMoveTopCardToAnyFoundation should moveCardsFrom first tableau&apos;s ace to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A game of klondike</className>
+          <testName>, tryMoveTopCardToAnyFoundation should not error on empty pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A foundation pile</className>
+          <testName>that is empty will accept an ace</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A foundation pile</className>
+          <testName>that is empty will not accept a rank other than ace</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A foundation pile</className>
+          <testName>will accept next rank in same suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A foundation pile</className>
+          <testName>will not accept same suit but not next rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A foundation pile</className>
+          <testName>will not accept different suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A pile</className>
+          <testName>should be empty</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A pile</className>
+          <testName>should return undefined as the top card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A pile</className>
+          <testName>, removeCard should not error</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A pile</className>
+          <testName>should not be empty</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A pile</className>
+          <testName>should return the last card as the top card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A pile</className>
+          <testName>, removeCard should not error if card not in pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A pile</className>
+          <testName>, removeCard should remove card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A pile</className>
+          <testName>, addTopCard should put card on top</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A remainder pile</className>
+          <testName>should accept cards into the remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A remainder pile</className>
+          <testName>should flip the top card onto the waste</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A remainder pile</className>
+          <testName>construct an empty waste pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A remainder pile</className>
+          <testName>recycle waste cards back into remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A remainder pile</className>
+          <testName>turn cards down in remainder pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A remainder pile</className>
+          <testName>reverse cards into remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>that is empty will accept a king</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>that is empty will not accept a rank other than king</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will accept lower rank in alternate color</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will not accept lower rank in same color</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will not accept different color if not next lower rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will flip over next card if top card removed</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will not error if no next card after removing top</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will not error if event received to move from pile that doesn&apos;t exist</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will accept all of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will accept part of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will not accept turned down part of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).A tableau pile</className>
+          <testName>will not accept multiple from a pile that isn&apos;t another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should start at zero</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should reset score on a new game</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should add 5 when waste moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should add 10 when waste moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should add 10 when tableau moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should subtract 15 when foundation moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should add nothing when foundation moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should add nothing when tableau moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should add 5 when tableau card turned over because top was removed</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should not add 5 when tableau card already turned over</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should subtract 100 when waste recycled</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>PhantomJS_2_1_1_(Mac_OS_X_0_0_0).The score</className>
+          <testName>should not go negative when waste recycled</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/tmp/jenkins-agent/workspace/solitaire/test-results/Chrome_56.0.2924_(Mac_OS_X_10.12.3)/test-results.xml</file>
+      <name>Chrome 56.0.2924 (Mac OS X 10.12.3)</name>
+      <stdout>
+    
+
+  </stdout>
+      <stderr></stderr>
+      <duration>0.312</duration>
+      <timestamp>2017-02-10T12:07:42</timestamp>
+      <id>0</id>
+      <time>0.312</time>
+      <cases>
+        <case>
+          <duration>0.004</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A card</className>
+          <testName>should link to the image of the suit and rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A card</className>
+          <testName>should map its color to black or red based on suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.042</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A deck of cards</className>
+          <testName>should have 52 cards</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A deck of cards</className>
+          <testName>should start with aces</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A deck of cards</className>
+          <testName>should end with twos</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A deck of cards</className>
+          <testName>should shuffle</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.016</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A klondike board controller</className>
+          <testName>should load a new game</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A klondike board controller</className>
+          <testName>should load the score</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should deal seven tableau piles of increasing piles.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.056</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should deal remainder to deck turned down.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should not deal any duplicate cards.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should deal tableau piles with last card turned up.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should allow moving first tableau&apos;s ace to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should allow moving second tableau&apos;s ace to first foundation and turns over next card in second tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should not allow moving third tableau&apos;s king of spades to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.029</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should not allow moving remainder&apos;s two of diamonds to first tableau&apos;s ace of clubs</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.025</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>, if we reverse remainder (hack the scenario) so 7 of clubs is on top, should allow moving foundation&apos;s 7 of clubs to last tableau&apos;s 8 of diamonds</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should allow moving remainder to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should not allow moving remainder to foundation if not next rank in suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>, tryMoveTopCardToAnyFoundation should moveCardsFrom first tableau&apos;s ace to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.01</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>, tryMoveTopCardToAnyFoundation should not error on empty pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>that is empty will accept an ace</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>that is empty will not accept a rank other than ace</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>will accept next rank in same suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>will not accept same suit but not next rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>will not accept different suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>should be empty</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.009</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>should return undefined as the top card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>, removeCard should not error</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>should not be empty</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>should return the last card as the top card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>, removeCard should not error if card not in pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>, removeCard should remove card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>, addTopCard should put card on top</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>should accept cards into the remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>should flip the top card onto the waste</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>construct an empty waste pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>recycle waste cards back into remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>turn cards down in remainder pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>reverse cards into remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>that is empty will accept a king</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>that is empty will not accept a rank other than king</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will accept lower rank in alternate color</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not accept lower rank in same color</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not accept different color if not next lower rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will flip over next card if top card removed</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not error if no next card after removing top</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not error if event received to move from pile that doesn&apos;t exist</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will accept all of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will accept part of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not accept turned down part of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not accept multiple from a pile that isn&apos;t another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should start at zero</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should reset score on a new game</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add 5 when waste moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add 10 when waste moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add 10 when tableau moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should subtract 15 when foundation moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add nothing when foundation moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add nothing when tableau moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add 5 when tableau card turned over because top was removed</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should not add 5 when tableau card already turned over</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should subtract 100 when waste recycled</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Chrome_56_0_2924_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should not go negative when waste recycled</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/Users/padmakar/.jenkins/workspace/solitaire/test-results/Firefox_37.0.0_(Mac_OS_X_10.12.0)/test-results.xml</file>
+      <name>Firefox 37.0.0 (Mac OS X 10.12.0)</name>
+      <stdout>
+    
+
+  </stdout>
+      <stderr></stderr>
+      <duration>0.362</duration>
+      <timestamp>2017-02-10T12:07:45</timestamp>
+      <id>0</id>
+      <time>0.362</time>
+      <cases>
+        <case>
+          <duration>0.015</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A card</className>
+          <testName>should link to the image of the suit and rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A card</className>
+          <testName>should map its color to black or red based on suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A deck of cards</className>
+          <testName>should have 52 cards</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A deck of cards</className>
+          <testName>should start with aces</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A deck of cards</className>
+          <testName>should end with twos</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A deck of cards</className>
+          <testName>should shuffle</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.016</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A klondike board controller</className>
+          <testName>should load a new game</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A klondike board controller</className>
+          <testName>should load the score</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should deal seven tableau piles of increasing piles.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should deal remainder to deck turned down.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.009</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should not deal any duplicate cards.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should deal tableau piles with last card turned up.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should allow moving first tableau&apos;s ace to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.019</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should allow moving second tableau&apos;s ace to first foundation and turns over next card in second tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should not allow moving third tableau&apos;s king of spades to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should not allow moving remainder&apos;s two of diamonds to first tableau&apos;s ace of clubs</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.088</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>, if we reverse remainder (hack the scenario) so 7 of clubs is on top, should allow moving foundation&apos;s 7 of clubs to last tableau&apos;s 8 of diamonds</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should allow moving remainder to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>should not allow moving remainder to foundation if not next rank in suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>, tryMoveTopCardToAnyFoundation should moveCardsFrom first tableau&apos;s ace to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A game of klondike</className>
+          <testName>, tryMoveTopCardToAnyFoundation should not error on empty pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile</className>
+          <testName>that is empty will accept an ace</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile</className>
+          <testName>that is empty will not accept a rank other than ace</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile</className>
+          <testName>will accept next rank in same suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile</className>
+          <testName>will not accept same suit but not next rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A foundation pile</className>
+          <testName>will not accept different suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile</className>
+          <testName>should be empty</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile</className>
+          <testName>should return undefined as the top card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile</className>
+          <testName>, removeCard should not error</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile</className>
+          <testName>should not be empty</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile</className>
+          <testName>should return the last card as the top card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile</className>
+          <testName>, removeCard should not error if card not in pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.037</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile</className>
+          <testName>, removeCard should remove card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A pile</className>
+          <testName>, addTopCard should put card on top</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile</className>
+          <testName>should accept cards into the remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile</className>
+          <testName>should flip the top card onto the waste</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile</className>
+          <testName>construct an empty waste pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile</className>
+          <testName>recycle waste cards back into remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile</className>
+          <testName>turn cards down in remainder pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A remainder pile</className>
+          <testName>reverse cards into remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>that is empty will accept a king</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>that is empty will not accept a rank other than king</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will accept lower rank in alternate color</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will not accept lower rank in same color</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will not accept different color if not next lower rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will flip over next card if top card removed</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will not error if no next card after removing top</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will not error if event received to move from pile that doesn&apos;t exist</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will accept all of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will accept part of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will not accept turned down part of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).A tableau pile</className>
+          <testName>will not accept multiple from a pile that isn&apos;t another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should start at zero</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should reset score on a new game</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should add 5 when waste moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should add 10 when waste moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should add 10 when tableau moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should subtract 15 when foundation moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should add nothing when foundation moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should add nothing when tableau moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should add 5 when tableau card turned over because top was removed</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should not add 5 when tableau card already turned over</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should subtract 100 when waste recycled</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Firefox_37_0_0_(Mac_OS_X_10_12_0).The score</className>
+          <testName>should not go negative when waste recycled</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/Users/padmakar/.jenkins/workspace/solitaire@2/test-results/Safari_10.0.3_(Mac_OS_X_10.12.3)/test-results.xml</file>
+      <name>Safari 10.0.3 (Mac OS X 10.12.3)</name>
+      <stdout>
+    
+
+  </stdout>
+      <stderr></stderr>
+      <duration>3.119</duration>
+      <timestamp>2017-02-10T12:07:45</timestamp>
+      <id>0</id>
+      <time>3.119</time>
+      <cases>
+        <case>
+          <duration>0.952</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>, if we reverse remainder (hack the scenario) so 7 of clubs is on top, should allow moving foundation&apos;s 7 of clubs to last tableau&apos;s 8 of diamonds</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should allow moving remainder to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should not allow moving remainder to foundation if not next rank in suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.007</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>, tryMoveTopCardToAnyFoundation should moveCardsFrom first tableau&apos;s ace to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>, tryMoveTopCardToAnyFoundation should not error on empty pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>that is empty will accept an ace</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>that is empty will not accept a rank other than ace</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>will accept next rank in same suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>will not accept same suit but not next rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A foundation pile</className>
+          <testName>will not accept different suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>should be empty</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>should return undefined as the top card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>, removeCard should not error</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>should not be empty</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>should return the last card as the top card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>, removeCard should not error if card not in pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.969</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>, removeCard should remove card</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A pile</className>
+          <testName>, addTopCard should put card on top</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>should accept cards into the remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>should flip the top card onto the waste</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>construct an empty waste pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>recycle waste cards back into remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>turn cards down in remainder pile</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A remainder pile</className>
+          <testName>reverse cards into remainder</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>that is empty will accept a king</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>that is empty will not accept a rank other than king</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will accept lower rank in alternate color</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not accept lower rank in same color</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not accept different color if not next lower rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.016</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will flip over next card if top card removed</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not error if no next card after removing top</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.926</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not error if event received to move from pile that doesn&apos;t exist</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will accept all of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will accept part of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not accept turned down part of another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A tableau pile</className>
+          <testName>will not accept multiple from a pile that isn&apos;t another tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.004</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should start at zero</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should reset score on a new game</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add 5 when waste moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add 10 when waste moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add 10 when tableau moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should subtract 15 when foundation moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add nothing when foundation moved to foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add nothing when tableau moved to tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should add 5 when tableau card turned over because top was removed</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should not add 5 when tableau card already turned over</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should subtract 100 when waste recycled</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).The score</className>
+          <testName>should not go negative when waste recycled</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A card</className>
+          <testName>should link to the image of the suit and rank</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A card</className>
+          <testName>should map its color to black or red based on suit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.053</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A deck of cards</className>
+          <testName>should have 52 cards</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.005</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A deck of cards</className>
+          <testName>should start with aces</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A deck of cards</className>
+          <testName>should end with twos</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.025</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A deck of cards</className>
+          <testName>should shuffle</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.05</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A klondike board controller</className>
+          <testName>should load a new game</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A klondike board controller</className>
+          <testName>should load the score</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should deal seven tableau piles of increasing piles.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should deal remainder to deck turned down.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.011</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should not deal any duplicate cards.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should deal tableau piles with last card turned up.</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should allow moving first tableau&apos;s ace to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should allow moving second tableau&apos;s ace to first foundation and turns over next card in second tableau</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should not allow moving third tableau&apos;s king of spades to first foundation</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>Safari_10_0_3_(Mac_OS_X_10_12_3).A game of klondike</className>
+          <testName>should not allow moving remainder&apos;s two of diamonds to first tableau&apos;s ace of clubs</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>3.896</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>
